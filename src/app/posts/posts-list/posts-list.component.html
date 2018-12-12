@@ -1,0 +1,16 @@
+<div class="posts-list">
+  <h2>Listado de posts</h2>
+  <ul>
+    <li *ngFor="let post of allPosts" class="post">
+      <p>
+        <b>Title: </b>{{ post.title }}
+      </p>
+      <p>
+        <b>Body: </b>{{ post.body | slice:0:16 }}...
+      </p>
+      <p class="detail-link">
+        <a [routerLink]="['/posts/detail', post.id]">Ver más...</a>
+      </p>
+    </li>
+  </ul>
+</div>

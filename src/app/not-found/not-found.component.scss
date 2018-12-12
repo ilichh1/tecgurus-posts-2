@@ -1,0 +1,15 @@
+.not-found>h1 {
+  font-family: sans-serif;
+  font-size: 4em;
+  animation: not-found 800ms ease-in-out infinite alternate;
+}
+
+@keyframes not-found {
+  from {
+    color: cyan;
+  }
+
+  to {
+    color: red;
+  }
+}
